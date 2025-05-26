@@ -4,5 +4,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	base: '/weathersite/',
-	plugins: [tailwindcss(), sveltekit()]
+	plugins: [tailwindcss(), sveltekit()],
+
+	build: {
+		outDir: 'dist',
+	}
 });
